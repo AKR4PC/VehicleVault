@@ -1,0 +1,101 @@
+
+CREATE TABLE employees (
+  empno int primary key,
+  name varchar(30),
+  post varchar(20),
+  salary bigint(10),
+  years_of_service tinyint(2),
+  employe_code varchar(10),
+  sales_in_month int(4),
+  grade varchar(1)
+);
+
+insert into employees values
+(1,'Ravi Kumar', 'Manager', 50000, 5, 'EMP001', 3, 'A'),
+(2,'Amit Sharma', 'Assistant Manager', 40000, 3, 'EMP002', 2, 'B'),
+(3,'Deepak Singh', 'Sales Executive', 30000, 2, 'EMP003', 4, 'C'),
+(4,'Neha Patel', 'Sales Executive', 30000, 1, 'EMP004', 2, 'B'),
+(5,'Priya Gupta', 'HR Manager', 45000, 6, 'EMP005', 0, 'A'),
+(6,'Rajesh Verma', 'Accountant', 35000, 4, 'EMP006', 3, 'B'),
+(7,'Anjali Sharma', 'Marketing Executive', 35000, 2, 'EMP007', 1, 'C'),
+(8,'Sanjay Singh', 'Assistant Manager', 40000, 3, 'EMP008', 3, 'B'),
+(9,'Meena Kumari', 'Sales Executive', 30000, 1, 'EMP009', 1, 'C'),
+(10,'Vikas Verma', 'Sales Manager', 55000, 7, 'EMP010', 4, 'A');
+
+
+create table mercedes(
+  SRno int primary key,
+  model varchar(30),
+  body_type varchar(20),
+  fuel_type varchar(15),
+  class varchar(15),
+  price bigint(10),
+  output varchar(100),
+  acceleration float(5, 2),
+  top_speed int(3)
+);
+
+insert into mercedes values
+(1,'Mercedes-Benz C-Class', 'Sedan', 'Petrol', 'Luxury', 4000000, '245 hp', 6.2, 250),
+(2,'Mercedes-Benz E-Class', 'Sedan', 'Diesel', 'Executive', 5000000, '194 hp', 6.9, 240),
+(3,'Mercedes-Benz S-Class', 'Sedan', 'Petrol', 'Luxury', 9000000, '469 hp', 4.6, 250),
+(4,'Mercedes-Benz A-Class', 'Hatchback', 'Petrol', 'Compact', 3000000, '161 hp', 8.2, 220),
+(5,'Mercedes-Benz GLC', 'SUV', 'Petrol', 'Compact', 5500000, '254 hp', 6.2, 240),
+(6,'Mercedes-Benz GLE', 'SUV', 'Diesel', 'Midsize', 7000000, '325 hp', 5.7, 250),
+(7,'Mercedes-Benz GLS', 'SUV', 'Petrol', 'Fullsize', 8500000, '362 hp', 6.5, 240),
+(8,'Mercedes-Benz CLA', 'Coupe', 'Petrol', 'Luxury', 3500000, '221 hp', 7.1, 230),
+(9,'Mercedes-Benz AMG GT', 'Coupe', 'Petrol', 'Sports', 12000000, '469 hp', 4.0, 310);
+
+create table BMW
+(
+SRno int primary key,
+Model varchar(30),
+Bodytype varchar(20),
+Fueltype varchar(10),
+Price bigint(10),
+Acceleration float(2,1),
+topspeed int(3)
+);
+
+insert into BMW values
+(1,'BMW M2', 'Coupe', 'Petrol', 6000000, 4.3, 280),
+(2,'BMW M4', 'Coupe', 'Petrol', 8000000, 3.8, 290),
+(3,'BMW M5', 'Sedan', 'Petrol', 10000000, 3.4, 305),
+(4,'BMW Z4', 'Roadster', 'Petrol', 7000000, 4.6, 265),
+(5,'BMW X1', 'SUV', 'Diesel', 4000000, 6.5, 215),
+(6,'BMW X3', 'SUV', 'Diesel', 6000000, 5.9, 240),
+(7,'BMW X5', 'SUV', 'Petrol', 9000000, 5.2, 250),
+(8,'BMW Z8', 'Roadster', 'Petrol', 15000000, 4.2, 250),
+(9,'BMW X7', 'SUV', 'Diesel', 12000000, 4.5, 260);
+
+CREATE TABLE customers (
+  SRno int primary key,
+  name varchar(20),
+  address varchar(20),
+  car varchar(30),
+  phone_number varchar(15),
+  age smallint(2),
+  car_company varchar(20)
+);
+
+insert into customers values
+(1,'Rahul Verma', 'Delhi', 'Mercedes-Benz C-Class', '9876543210', 35, 'Mercedes'),
+(2,'Priya Sharma', 'Maharashtra', 'BMW M4', '9876543211', 28, 'BMW'),
+(3,'Amit Patel', 'Gujarat', 'Porsche 911', '9876543212', 42, 'Porsche'),
+(4,'Sneha Gupta', 'Uttar Pradesh', 'Nissan Rogue', '9876543213', 31, 'Nissan'),
+(5,'Sanjay Kumar', 'Karnataka', 'Toyota Camry', '9876543214', 37, 'Toyota'),
+(6,'Anjali Singh', 'Bihar', 'Honda Civic', '9876543215', 25, 'Honda'),
+(7,'Rajesh Sharma', 'Rajasthan', 'Audi A6', '9876543216', 45, 'Audi'),
+(8,'Sunita Devi', 'Haryana', 'Mercedes-Benz E-Class', '9876543217', 39, 'Mercedes'),
+(9,'Vivek Singh', 'Madhya Pradesh', 'BMW X5', '9876543218', 33, 'BMW'),
+(10,'Pooja Sharma', 'Uttarakhand', 'Porsche Taycan', '9876543219', 29, 'Porsche'),
+(11,'Rakesh Gupta', 'West Bengal', 'Nissan Leaf', '9876543220', 37, 'Nissan'),
+(12,'Rekha Patel', 'Gujarat', 'Toyota RAV4', '9876543221', 32, 'Toyota'),
+(13,'Deepak Kumar', 'Karnataka', 'Honda CR-V', '9876543222', 36, 'Honda'),
+(14,'Neha Singh', 'Uttar Pradesh', 'Audi Q7', '9876543223', 27, 'Audi'),
+(15,'Arun Sharma', 'Haryana', 'Mercedes-Benz S-Class', '9876543224', 43, 'Mercedes'),
+(16,'Rina Devi', 'Bihar', 'BMW M5', '9876543225', 30, 'BMW'),
+(17,'Vikas Verma', 'Delhi', 'Porsche Macan', '9876543226', 34, 'Porsche'),
+(18,'Meena Kumari', 'Rajasthan', 'Nissan Sentra', '9876543227', 38, 'Nissan'),
+(19,'Rahul Singh', 'Madhya Pradesh', 'Toyota Corolla', '9876543228', 31, 'Toyota'),
+(20,'Priya Gupta', 'Maharashtra', 'Honda City', '9876543229', 26, 'Honda');
